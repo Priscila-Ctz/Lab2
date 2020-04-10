@@ -10,8 +10,7 @@
         <h1 style="text-align: center">
             🌟 ¡Su video ha sido agregado! 🌟</h1>
            </p>  <img src="../../Content/kirby-con-estrella.jpg" 
-            style="height: 245px; width: 579px; text-align: center; margin-left: 262px;" /></p>
-&nbsp;<p style="text-align: center">
-            &nbsp;</p>
+            style="height: 245px; width: 579px; text-align: center; margin-left: 262px;" />
+            <br />      <a href="/Home"> ↞ Volver al menú 🏡</a>
 </body>
 </html>

@@ -67,5 +67,19 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Delete(int IdVideo)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", IdVideo));
+            BaseHelper.ejecutarSentencia("sp_video_Delete", CommandType.StoredProcedure, parametros);
+
+            return View("Eliminado");
+        }
+        public ActionResult Eliminado()
+        {
+            return View();
+        }
     }
 }

@@ -8,5 +8,19 @@
 </head>
 <body>
     <a href="/Home"> ↞ Volver al menú 🏡</a>
+    <form action="/Video/Delete" method="post">
+    <fieldset>    
+
+    <label for="IdVideo">
+        <br />
+        Ingresa el ID del video a borrar:</label>
+    <input type="text" name="IdVideo"/>
+
+        <br />
+        <br />
+
+        <input type="submit"  value="Eliminar Video " />
+    
+    </fieldset>
 </body>
 </html>
