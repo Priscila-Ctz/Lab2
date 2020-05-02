@@ -8,5 +8,25 @@
 </head>
 <body>
     <a href="/Home"> ↞ Volver al menú 🏡</a>
+        <form action="/Video/Update" method="post">
+    <fieldset>
+
+    <legend>Inserte los datos del video a modificar:</legend>
+    <label for="IdVideo">ID del video</label>
+    <input type="text" name="IdVideo" />
+
+    <label for="titulo">Titulo del video</label>
+    <input type="text" name="titulo"/>
+
+    <label for="reproduccion">reproducciones</label>
+    <input type="text" name="reproduccion" />
+
+    <label for="Url">Url del video</label>
+    <input type="text" name="Url"/>
+
+    <label for="IdVideo">ID del video a modificar</label>
+    <input type="text" name="IdVideo" />
+
+    <input type="submit" value="Modificar Video"/>
 </body>
 </html>

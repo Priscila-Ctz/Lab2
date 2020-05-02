@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\164-1645597_le-blog-de-jona-kirby-clipart.png" />
+    <Content Include="Content\8c5797603321a463f0fccfe15e1b255d.png" />
     <Content Include="Content\kirby-con-estrella.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -84,6 +85,7 @@
     <Content Include="Views\Video\Create.aspx" />
     <Content Include="Views\Video\Delete.aspx" />
     <Content Include="Views\Video\Eliminado.aspx" />
+    <Content Include="Views\Video\Modificado.aspx" />
     <Content Include="Views\Video\Select.aspx" />
     <Content Include="Views\Video\Update.aspx" />
     <Content Include="Web.config" />
