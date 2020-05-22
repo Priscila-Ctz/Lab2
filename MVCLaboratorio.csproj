@@ -75,9 +75,11 @@
     <Compile Include="Utilerias\BaseHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\kirby-con-estrella.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Video\Agregado.aspx" />
     <Content Include="Views\Video\Create.aspx" />
     <Content Include="Views\Video\Delete.aspx" />
     <Content Include="Views\Video\Select.aspx" />

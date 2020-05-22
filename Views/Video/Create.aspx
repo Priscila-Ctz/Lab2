@@ -8,5 +8,33 @@
 </head>
 <body>
     <a href="/Home"> ↞ Volver al menú 🏡</a>
+
+       <form action="/Video/Create" method="post">
+    <fieldset>
+        
+    <legend>Inserta los datos:</legend>
+
+        <label for="IdVideo">ID Video</label>
+        <input type="text" name="IdVideo" />
+
+        <label for="titulo">
+        <br />
+        Titulo</label>
+        <input type="text" name="titulo" />
+
+        <label for="reproduccion">
+        <br />
+        Reproducciones</label>
+        <input type="text" name="reproduccion" />
+
+        <label for="Url">
+        <br />
+        Liga del video</label>
+        <input type="text" name="Url" /><br />
+&nbsp;<hr />
+        <input type="submit" value="Agregar Video " />
+
+
+    </fieldset>
 </body>
 </html>

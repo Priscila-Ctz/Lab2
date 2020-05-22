@@ -28,8 +28,35 @@ namespace MVCLaboratorio.Controllers
 
         public ActionResult Create()
         {
+            ViewData["video"] = BaseHelper.ejecutarConsulta(
+                   "SELECT * FROM video", CommandType.Text);
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Create(int IdVideo,
+                                   string titulo, 
+                                   int reproduccion, 
+                                   string Url)
+        {
+
+            //guardar datos
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", IdVideo));
+            parametros.Add(new SqlParameter("@titulo", titulo));
+            parametros.Add(new SqlParameter("@reproduccion", reproduccion));
+            parametros.Add(new SqlParameter("@Url", Url));
+
+            BaseHelper.ejecutarSentencia("sp_video_Create", CommandType.StoredProcedure,parametros);
+
+            return View("Agregado");
+        }
+
+        public ActionResult Agregado()
+        {
+            return View();
+        }
+
 
         public ActionResult Update()
         {
